@@ -1,0 +1,21 @@
+<!-- nav.html -->
+<div id="nav-placeholder">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<script>
+  fetch("nav.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    })
+    .catch((error) => console.error("Error loading navigation:", error));
+</script>

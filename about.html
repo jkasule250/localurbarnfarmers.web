@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Local Urban Farmers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script>
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("nav-placeholder").innerHTML = data;
+    });
+</script>
+<body>
+
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+  
+  <!-- Hero Header -->
+  <header class="hero" style="background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('images/farm-bg.jpg') center/cover no-repeat;">
+    <div class="logo">
+      <span class="logo-icon">🌱</span>
+      <span class="logo-text">Local Urban Farmers</span>
+    </div>
+    <p>Building Greener Cities, One Garden at a Time</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Local Urban Farmers</h2>
+    <p>
+      Local Urban Farmers is a grassroots collective transforming rooftops, yards, and shared spaces into sustainable, edible gardens.
+      Our mission is to reconnect people to the food they eat and the land it comes from—even in the heart of the city.
+    </p>
+    <p>
+      Founded in Loxford Lane Allotments, our journey began with a single raised bed and a lot of curiosity. Today, we run community plots, host workshops, and supply produce to local markets and homes every week.
+    </p>
+    <p>
+      Whether you're a curious beginner or a seasoned gardener, we welcome you to grow with us.
+    </p>
+  </section>
+  <section class="contact">
+  <h2>Get In Touch</h2>
+  <p>Connect with us on social media:</p>
+  <div class="social-links">
+    <a href="https://www.instagram.com/local_urban_farmer?igsh=MWNyb3Y3c2Jxa3g4bA==" target="_blank" aria-label="Instagram" class="social-link">
+      <img src="Images/Instagram--Streamline-Ios-14.png" alt="Instagram Icon" width="50" height="50">
+      Instagram
+    </a>
+    <a href="https://www.facebook.com/localurbanfarmers" target="_blank" aria-label="Facebook">
+      <img src="Images/Facebook--Streamline-Ios-14.png" alt="Facebook Icon" width="50" height="50">
+      Facebook
+    </a>
+    <a href="https://youtube.com/@localurbanfarmers?si=Pzz8ODoUY-SWfigF" target="_blank" aria-label="YouTube">
+      <img src="Images/Youtube--Streamline-Ios-14.png" alt="YouTube Icon" width="50" height="50">
+      YouTube
+    </a>
+    <a href="http://tiktok.com/@local.urban.farmers?_t=ZN-8uqIh5cNKGU&_r=1" target="_blank" aria-label="TikTok">
+      <img src="Images/Tiktok--Streamline-Ios-14.png" alt="TikTok Icon" width="50" height="50">
+      TikTok
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Local Urban Farmers. All rights reserved.</p>
+    <form action="mallto:localurbanfarmers1@gmail.com" method="POST">
+      <label for="email">Subscribe to our newsletter:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Local Urban Farmers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+  <!-- Hero Header -->
+  <header class="hero" style="background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url('images/farm-bg.jpg') center/cover no-repeat;">
+    <div class="logo">
+      <span class="logo-icon">🌱</span>
+      <span class="logo-text">Local Urban Farmers</span>
+    </div>
+    <p>Let's grow together. Reach out!</p>
+  </header>
+<!-- Honeypot field - bots usually fill it -->
+<div style="display:none;">
+  <label>Leave this empty: <input type="text" name="honeytrap" /></label>
+</div>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Got questions, ideas, or want to collaborate? Fill out the form below—we’d love to hear from you.</p>
+    
+    <form action="https://script.google.com/macros/s/AKfycbzdENo06Z_eGaKA0YSozQ7PzOnc0fKkDxcswjW8O_beYVpPZjbERHPMVHzcRPoV-SNToA/exec" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+    
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+    
+      <button type="submit">Send Message</button>
+    </form>
+    <!-- Social Navigation -->
+    <h2>Get In Touch</h2>
+    <p>Connect with us on social media:</p>
+    <div class="social-nav">
+      <a href="https://www.instagram.com/local_urban_farmer" target="_blank" aria-label="Instagram">
+        <img src="Images/Instagram--Streamline-Ios-14.png" alt="Instagram Icon" width="30" height="30">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61574070733800" target="_blank" aria-label="Facebook">
+        <img src="Images/Facebook--Streamline-Ios-14.png" alt="Facebook Icon" width="30" height="30">
+      </a>
+      <a href="https://youtube.com/@localurbanfarmers" target="_blank" aria-label="YouTube">
+        <img src="Images/Youtube--Streamline-Ios-14.png" alt="YouTube Icon" width="30" height="30">
+      </a>
+      <a href="http://tiktok.com/@local.urban.farmers" target="_blank" aria-label="TikTok">
+        <img src="Images/Instagram--Streamline-Ios-14.png" alt="TikTok Icon" width="30" height="30">
+      </a>
+    </div>
+    <footer>
+      <p>&copy; 2025 Local Urban Farmers. All rights reserved.</p>
+
+      <!-- Newsletter Subscription -->
+      <form action="mailto:localurbanfarmers1@gmail.com" method="POST" class="newsletter-form">
+        <label for="newsletter-email">Subscribe to our newsletter:</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+
+      
+    </footer>
+</body>
+</html>

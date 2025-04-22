@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Local – Local Urban Farmers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <div id="nav-placeholder"></div>
+
+  <!-- Hero Section -->
+  <header class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/shop-hero.jpg') center/cover no-repeat;">
+    <h1>🛒 Shop Local Produce</h1>
+    <p>Fresh, organic, and locally grown produce delivered to your doorstep.</p>
+  </header>
+
+  <!-- Product Grid Section -->
+  <main class="shop-section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <!-- Example Product Card -->
+      <div class="product-card">
+        <img src="img/tomatoes.jpg" alt="Fresh Tomatoes">
+        <h3>Tomatoes</h3>
+        <p>£1.50 / lb</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/carrots.jpg" alt="Fresh Carrots">
+        <h3>Carrots</h3>
+        <p>£1.20 / lb</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="img/lettuce.jpg" alt="Fresh Lettuce">
+        <h3>Lettuce</h3>
+        <p>£0.99 / head</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </main>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Get In Touch</h2>
+    <p>Have questions? Reach out to us!</p>
+    <form id="contactForm" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Local Urban Farmers. All rights reserved.</p>
+    <form action="mailto:localurbanfarmers1@gmail.com" method="POST">
+      <label for="email">Subscribe to our newsletter:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </footer>
+
+  <!-- JavaScript for Navigation -->
+  <script>
+    fetch("nav.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error("Error loading navigation:", error));
+  </script>
+</body>
+</html>
